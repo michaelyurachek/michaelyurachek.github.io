@@ -42,8 +42,9 @@ body {
     width: 100vw;
     height: 1000vh;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Navigation area */
@@ -51,6 +52,126 @@ body {
     width: 100vw;
     height: 8vh;
     background-size: 150px;
-    background-color: rgb(255, 255, 255);
-    background-image: url("/asset/images/background/brick-wall-dark.png");
+    overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(25, 25, 31);
+    background-image: url("/asset/images/background/gplay.png");
+    display: flex;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.452);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#iconNav {
+  width: 40%;
+  height: 100%;
+  gap: 5vw;
+}
+
+#iconNav img {
+  width: 5vw;
+  height: auto;
+}
+
+#iconNav h1 {
+  color: white;
+  font-family: 'nextStep', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: .1em .1em 0 rgb(105, 105, 189);
+}
+
+#navButtons {
+  width: 60%;
+  height: auto;
+  gap: 5vw;
+}
+
+#navButtons button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  font-family: 'nextStep', sans-serif;
+  transition: .2s ease;
+}
+
+#navButtons button:hover {
+  border-bottom: 3px ridge white;
+  font-size: 1.9em;
+  cursor: pointer;
+}
+
+#navButtons button:active {
+  font-size: 1.6em;
+}
+
+/* Header area */
+.headerBlock {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/asset/images/background/inspiration-geometry.png");
+  background-size: 10vw;
+  background-color: rgb(16, 17, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.658) inset;
+}
+
+.headerDivide h2 {
+  color: white;
+  background-image: linear-gradient(45deg, rgb(29, 29, 44), rgb(63, 64, 78));
+  padding: 20px;
+  font-size: 1.5em;
+  align-self: start;
+  position: relative;
+  box-shadow: 0 0 20px black;
+  font-family: 'nextStep', sans-serif;
+  left: 2vw;
+}
+
+.headerDivide h1 {
+  width: 90%;
+  height: auto;
+  color: rgb(228, 228, 228);
+  font-size: 4em;
+  text-wrap: nowrap;
+  overflow: visible;
+  font-family: 'nextStep', sans-serif;
+  font-weight: bold;
+  text-shadow: .1em .1em 0 rgb(60, 61, 75);
+  padding: 25px;
+}
+
+.headerDivide p {
+  width: 90%;
+  height: auto;
+  color: rgb(196, 196, 196);
+  font-family: 'nextStep', sans-serif;
+  line-height: 4vh;
+  font-weight: bold;
+  font-size: 2em;
+  text-shadow: .1em .1em 0 rgb(60, 61, 75);
+}
+
+.headerDivide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.headerDivide img {
+  width: 20vw;
+  height: auto;
 }
