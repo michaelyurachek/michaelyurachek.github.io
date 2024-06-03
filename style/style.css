@@ -1,0 +1,56 @@
+/* Page reset */
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/* Scroll edit */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(159, 159, 159);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(68, 68, 68);
+}
+
+/* Font setup */
+@font-face {
+    font-family: 'nextStep';
+    src: url("/asset/fonts/NEXTSTEP.ttf");
+}
+
+@font-face {
+    font-family: 'zTalk';
+    src: url("/asset/fonts/ZTTalk-Bold.ttf");
+}
+
+/* Body color */
+body {
+    background-color: black;
+}
+
+/* Page container */
+.page-container {
+    width: 100vw;
+    height: 1000vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Navigation area */
+.navBlock {
+    width: 100vw;
+    height: 8vh;
+    background-size: 150px;
+    background-color: rgb(255, 255, 255);
+    background-image: url("/asset/images/background/brick-wall-dark.png");
+}
