@@ -55,6 +55,6 @@
 | Type | Description |
 | ---- | ----------- |
 | Creator | [Sandbox Geeks](LINK) |
-| Version | v0.0.3 (Pre-Alpha) |
+| Version | v0.0.4 (Pre-Alpha) |
 | Live | [Live Demo](https://michaelyurachek.github.io/)
 | Site Type | Portfolio |
