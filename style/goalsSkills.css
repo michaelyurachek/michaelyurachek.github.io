@@ -111,6 +111,14 @@ body {
   transform: scale(1.2);
   cursor: pointer;
 }
+/* Header Decor */
+.headerArea {
+  width: 100vw;
+  height: 200vh;
+  border-bottom: 1px ridge white;
+  box-shadow: 0 0 100px black inset;
+  background-image: url("/asset/images/background/hexellence.png"),linear-gradient(to top, black, rgb(34, 34, 49));
+}
 
 /* Footer Decor */
 .footerArea {

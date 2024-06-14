@@ -20,6 +20,11 @@
   background: rgb(68, 68, 68);
 }
 
+/* Custom Colors */
+:root {
+  --darkRed: rgb(190, 64, 64);
+}
+
 /* Font setup */
 @font-face {
     font-family: 'nextStep';
@@ -110,6 +115,35 @@ body {
 #navSocials img:hover {
   transform: scale(1.2);
   cursor: pointer;
+}
+
+/* Header Decor */
+.headerArea {
+  width: 100vw;
+  height: 300vh;
+  background-image: url("/asset/images/background/axiom-pattern.png");
+  background-color: rgb(15, 15, 17);
+  box-shadow: 0 0 150px black inset;
+  border-bottom: 2px ridge white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contentHolder {
+  width: 80vw;
+  height: 260vh;
+  background-image: url("/asset/images/background/inspiration-geometry.png");
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 20px;
+  box-shadow: 0 0 50px black;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  overflow:inherit;
 }
 
 /* Footer Decor */

@@ -112,6 +112,15 @@ body {
   cursor: pointer;
 }
 
+/* Header Decor */
+.headerArea {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px ridge white;
+  box-shadow: 0 0 100px black inset;
+  background-image: url("/asset/images/background/graphy-dark.png"),linear-gradient(45deg, rgb(16, 16, 22), rgb(32, 3, 3), rgb(4, 9, 59));
+}
+
 /* Footer Decor */
 .footerArea {
   width: 100vw;
