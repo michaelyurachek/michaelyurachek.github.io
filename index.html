@@ -4,137 +4,148 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style/style.css" type="text/css">
-        <script src="/script/script.js"></script>
+        <script defer src="/script/app.js"></script>
         <link rel="icon" type="image/png" href="/asset/images/icons/websiteIco.png">
-        <title>| Home</title>
+        <title>Michael Yurachek</title>
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="Michael's Portfolio">
+        <meta property="og:description" content="Hello! I'm Michael, a passionate software engineer with a knack for creating elegant and efficient solutions. I have a deep love for coding and enjoy working with the latest web technologies to bring ideas to life.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://michaelyurachek.github.io">
+        <meta property="og:image" content="https://michaelyurachek.github.io/asset/images/icons/websiteIco.png">
+        <meta property="og:site_name" content="Michael Yuracheks Portfolio">
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Michael's Portfolio">
+        <meta name="twitter:description" content="Hello! I'm Michael, a passionate software engineer with a knack for creating elegant and efficient solutions. I have a deep love for coding and enjoy working with the latest web technologies to bring ideas to life.">
+        <meta name="twitter:image" content="https://michaelyurachek.github.io/asset/images/icons/websiteIco.png">
+        <meta name="twitter:site" content="@skyzerbefr">
     </head>
     <body>
-        <div class="container">
-            <nav class="navigationArea">
-                <div class="navContainers" id="navLogo">
-                    <img src="/asset/images/icons/websiteIco.png">
+        <nav>
+            <img src="/asset/images/icons/websiteIco.png" id="website-logo">
+            <div class="nav-buttons">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#aboutme">About Me</a>
+                <a href="#timeline">Timeline</a>
+            </div>
+        </nav>
+        <header id="home">
+            <h1 class="hidden">Hey! I am Michael Yurachek,</h1>
+            <h2 class="hidden">A software engineer!</h2>
+        </header>
+        <section class="service-section" id="services">
+            <div class="service-info_holder">
+                <h1 class="hidden">My Best Services!</h1>
+                <p class="hidden">All my services for software engineering include use framework langauges and backend langauges. These langauges include HTML, CSS, Javascript, Java, Python and Git. Majority of the langauges are mastered with the ability to create whatever is requested!<br><br>If you are interested in my work, all of my top 4 projects are found on the side!</p>
+                <div class="service-images">
+                    <img src="/asset/images/langs/htmlBadge.png" class="hidden">
+                    <img src="/asset/images/langs/cssBadge.png" class="hidden">
+                    <img src="/asset/images/langs/javascriptBadge.png" class="hidden">
+                    <img src="/asset/images/langs/javaBadge.png" class="hidden">
+                    <img src="/asset/images/langs/pythonBadge.png" class="hidden">
+                    <img src="/asset/images/langs/gitBadge.png" class="hidden">
                 </div>
-                <div class="navContainers" id="navButtons">
-                    <button onclick="location.assign('/index.html');">Home</button>
-                    <button onclick="location.assign('/pages/cProject.html');">Current Project</button>
-                    <button onclick="location.assign('/pages/aboutMe.html');">About Me</button>
-                    <button onclick="location.assign('/pages/goalsSkills.html');">Goals / Skills</button>
-                </div>
-                <div class="navContainers" id="navSocials">
-                    <img src="/asset/images/socials/gitFancy.png" onclick="location.assign('https://github.com/michaelyurachek');">
-                    <img src="/asset/images/socials/instaIcon.png" onclick="location.assign('https://www.instagram.com/skyzerbefr/');">
-                    <img src="/asset/images/socials/snapIcon.png" onclick="location.assign('https://www.snapchat.com/add/skyzer_07?invite_id=PzQfgXtn&locale=en_US&share_id=LRT02RfeQsi0oRTSPk3Iqg&sid=b4d2d47426b44d6196733c307f644a3a');">
-                    <img src="/asset/images/socials/linkedinIcon.png" onclick="location.assign('https://www.linkedin.com/in/michael-yurachek-26b8a0313/');">
-                </div>
-            </nav>
-            <header class="headerArea">
-                <img src="/asset/images/icons/snapBitmoji.png">
-                <h1>Michael Yurachek</h1>
-                <h3>Learning Software Engineer</h3>
-                <p>Welcome to my home website where I show off all my work! I guess you can consider it as a portfolio, but I think of it as a mind scramble. All my content on this site features projects that are being actively worked on or already completed! Anyone can check on the projects at anytime, but just know they might not work as intended so please be patient for updates!<br><br>I am a new software engineer with a passion for creating impactful solutions. With a background in computer science and experience in various programming languages, I enjoy tackling complex problems and continuously learning new technologies.</p>
-            </header>
-            <article class="informationArea">
-                <h1>Project Details</h1>
-                <p>Make sure to checkout all project versions before clicking! If a project version is lower then 1.00.00, you might run into bugs. If you see a project with a gold background, that is my current project that I am actively working on! Also please consider checking out the source code and giving it a star and watch! It would greatly help me for future projects and consider checking out my profile aswell!</p>
-                <h2>Consider the following</h2>
-                <p>If you seem to run into a problem with a project, please head to the source code and fill out a bug report form!  All projects will have this form and make sure to fill out all the information with a descriptive issue. If a project version is under 1.00.00, please do not fill a report out as it is in production.  Also if you wish to use a project source code, make sure all versions are the same before downloading so you do not run into any problems!</p>
-            </article>
-            <section class="contentArea">
-                <div class="projectContainer">
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
+            </div>
+            <div class="service-info_holder">
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="/asset/images/background/exampleImage.jpg" alt="Project Image 1">
+                        <div class="overlay">Project Title</div>
                     </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
+                    <div class="grid-item">
+                        <img src="/asset/images/background/exampleImage.jpg" alt="Project Image 2">
+                        <div class="overlay">Project Title</div>
                     </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
+                    <div class="grid-item">
+                        <img src="/asset/images/background/exampleImage.jpg" alt="Project Image 3">
+                        <div class="overlay">Project Title</div>
                     </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
-                    </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
-                    </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
-                    </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
-                    </div>
-                    <div class="projectBox">
-                        <img src="/asset/images/background/exampleImage.jpg">
-                        <div class="infoBox">
-                            <h1>Project Title</h1>
-                            <h3>Category</h3>
-                            <p>Description</p>
-                            <h4>v0.0.0 (TYPE)</h4>
-                        </div>
+                    <div class="grid-item">
+                        <img src="/asset/images/background/exampleImage.jpg" alt="Project Image 4">
+                        <div class="overlay">Project Title</div>
                     </div>
                 </div>
-            </section>
-            <footer class="footerArea">
-                <div class="footerContainer">
-                    <h1>Pages</h1>
-                    <a onclick="location.assign('/index.html');">Home</a>
-                    <a onclick="location.assign('/pages/cProject.html');">Current Project</a>
-                    <a onclick="location.assign('/pages/aboutMe.html');">About Me</a>
-                    <a onclick="location.assign('/pages/goalsSkills.html');">Goals / Skills</a>
+            </div>
+        </section>
+        <section class="aboutme-section" id="aboutme">
+            <div class="about-container">
+                <div class="header">
+                    <h2 class="hidden">About Me</h2>
                 </div>
-                <div class="footerContainer">
-                    <h1>Info Links</h1>
-                    <a onclick="location.assign('https://github.com/michaelyurachek');">GitHub Profile</a>
-                    <a onclick="location.assign('https://github.com/michaelyurachek/michaelyurachek.github.io');">Source Code</a>
-                    <a onclick="location.assign('https://github.com/Sandbox-Geeks');">Sandbox Geeks</a>
-                    <a onclick="location.assign('https://www.linkedin.com/in/michael-yurachek-26b8a0313/');">Linkedin</a>
+                <div class="content">
+                    <h1 class="hidden">Michael Yurachek</h1>
+                    <p class="hidden">Hello! I'm Michael, a passionate software engineer with a knack for creating elegant and efficient solutions. I have a deep love for coding and enjoy working with the latest web technologies to bring ideas to life.</p>
+                    <p class="hidden">With a strong foundation in both front-end and back-end development, I specialize in building responsive, user-friendly websites and applications. I thrive in collaborative environments and am always eager to learn and grow.</p>
                 </div>
-                <div class="footerContainer" id="logoAndCopyright">
-                    <img src="/asset/images/icons/websiteIco.png">
-                    <p>Copyright © 2024 Sandbox Geeks</p>
+                <div class="social-media">
+                    <a class="hidden" href="https://github.com/michaelyurachek" target="_blank">
+                        <img src="/asset/images/socials/git.png" alt="Github">
+                    </a>
+                    <a class="hidden" href="https://t.snapchat.com/SeZhcKQW." target="_blank">
+                        <img src="/asset/images/socials/snap.png" alt="Snapchat">
+                    </a>
+                    <a class="hidden" href="https://www.linkedin.com/in/michael-yurachek-26b8a0313/" target="_blank">
+                        <img src="/asset/images/socials/link.png" alt="LinkedIn">
+                    </a>
+                    <a class="hidden" href="https://www.instagram.com/skyzerbefr/" target="_blank">
+                        <img src="/asset/images/socials/insta.png" alt="Instagram">
+                    </a>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </section>
+        <section class="timeline-section" id="timeline">
+            <h1 class="hidden">Project Timeline!</h1>
+            <div class="project-container">
+                <div class="project-item" onclick="location.href='https://github.com/project1'">
+                  <span class="hidden">Project 1 - January 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project2'">
+                  <span class="hidden">Project 2 - February 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project1'">
+                  <span class="hidden">Project 3 - January 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project2'">
+                  <span class="hidden">Project 4 - February 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project1'">
+                  <span class="hidden">Project 5 - January 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project2'">
+                  <span class="hidden">Project 6 - February 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project1'">
+                  <span class="hidden">Project 7 - January 2021</span>
+                </div>
+                <div class="project-item" onclick="location.href='https://github.com/project2'">
+                  <span class="hidden">Project 8 - February 2021</span>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-container">
+            <div class="footer-section">
+              <h2>Socials!</h2>
+              <ul>
+                <li class="hidden"><a href="https://github.com/michaelyurachek" target="_blank">Github</a></li>
+                <li class="hidden"><a href="https://www.instagram.com/skyzerbefr/" target="_blank">Instagram</a></li>
+                <li class="hidden"><a href="https://t.snapchat.com/SeZhcKQW." target="_blank">Snapchat</a></li>
+                <li class="hidden"><a href="https://www.linkedin.com/in/michael-yurachek-26b8a0313/" target="_blank">LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h2>Extra Info!</h2>
+              <ul>
+                <li class="hidden"><a href="https://github.com/michaelyurachek/michaelyurachek.github.io" target="_blank">Portfolio Source Code</a></li>
+                <li class="hidden"><a href="https://github.com/Sandbox-Geeks" target="_blank">Sandbox Geeks</a></li>
+                <li class="hidden"><a href="https://github.com/michaelyurachek?tab=repositories" target="_blank">My Repositories!</a></li>
+                <li class="hidden"><a href="https://github.com/michaelyurachek/AppleClicker" target="_blank">Current Project</a></li>
+              </ul>
+            </div>
+            <div class="footer-copyright">
+              <p>&copy; 2024 Michael Yurachek. All rights reserved.</p>
+            </div>
+          </footer>
     </body>
 </html>
