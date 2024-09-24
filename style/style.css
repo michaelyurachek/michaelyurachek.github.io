@@ -36,6 +36,19 @@ html {
   background-color: lightgray; 
 }
 
+/* Initially hide the text */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(100px); /* Move it slightly below its normal position */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Class to apply when the element is visible */
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0); /* Return to its original position */
+}
+
 /* Firefox support */
 * {
   scrollbar-width: thin; 
@@ -204,9 +217,155 @@ header h1, h2, h3 {
 #aboutMe-section {
   width: 100vw;
   height: 100vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
 }
+
+.aboutHolders {
+  background-image: url("/asset/images/background/Firewatch+Tower.jpeg");
+  width: 30%;
+  height: 80%;
+  padding-top: 2vh;
+  filter: blur(5px) brightness(50%);
+  transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.1s ease, border-radius 0.3s ease-in-out;
+  box-shadow: 0 0 50px black;
+  border-radius: 10px;
+}
+
+.aboutHolders:hover {
+  filter: blur(0);
+  transform: scale(1.04);
+  box-shadow: 0 0 50px rgb(41, 41, 41);
+  z-index: 5;
+  border-radius: 4px;
+}
+
+#about-left {
+  background-position: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.aboutTitle {
+  color: white;
+  width: 80%;
+  padding: 10px;
+  background-color: black;
+  font-size: 2em;
+  text-align: center;
+}
+
+.projectBar {
+  overflow: hidden; 
+  width: 90%;
+  height: 10vh;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1vw;
+  box-shadow: 5px 5px 0 white;
+}
+
+.projectBar img {
+  height: 90%;
+  width: auto;
+}
+
+.projectBar h1 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  width: 80%;
+}
+
+#about-main {
+  background-position: center;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-main img {
+  width: 40%;
+  height: auto;
+  border-radius: 100vw;
+  box-shadow: 0 0 20px black;
+}
+
+#about-main h1 {
+  color: yellow;
+  font-size: 2em;
+  text-shadow: .1em .1em 0 black, .2em .2em 0 rgb(255, 255, 255);
+  text-align: center;
+  overflow: visible;
+  padding: 5vh 0;
+  font-weight: bold;
+}
+
+#about-main p {
+  width: 80%;
+  height: auto;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: justify;
+}
+
+#spotswood-bold {
+  color: rgb(113, 163, 255);
+}
+
+#engineer-bold {
+  color: rgb(161, 255, 221);
+}
+
+#likes-bold {
+  color: rgb(255, 184, 184);
+}
+
+#about-right {
+  background-position: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.topRight {
+  width: 90%;
+  height: 8vh;
+  padding: 1vh 0;
+  background-color: black;
+  box-shadow: 5px 5px 0 white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topRight img {
+  height: 90%;
+  width: auto;
+}
+
+.topRight h1 {
+  color: white; 
+  width: 70%;
+  text-align: center;
+  font-size: 1em;
+}
+
 
 /* Footer Section */
 footer {
