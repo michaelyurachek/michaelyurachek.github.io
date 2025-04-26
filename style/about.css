@@ -1,0 +1,191 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Russo+One&display=swap');
+
+/* Global Style */
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+:root {
+    /* Fonts */
+    --font_1: "Russo One", sans-serif;
+    --font_2: "Lexend", sans-serif;
+    /* Colors */
+    --main_color: black;
+    --main_theme: rgb(15, 15, 15);
+    --main_themeLight: rgb(30, 30, 30);
+    --main_themeDark: rgb(10, 10, 10);
+}
+
+/* Span Color */
+.span_color {
+    color: var(--main_color);
+}
+
+/* Containers */
+.page_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main_themeDark);
+    background-attachment: fixed;
+    background-size: 15vw;
+    background-image: url(/library/image/texture/inspiration-geometry.png);
+}
+
+.content_container {
+    width: 70vw;
+    height: auto;
+    padding-bottom: 5vh;
+    background-color: var(--main_theme);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.678);
+    border-right: 2px solid var(--main_themeLight);
+    border-left: 2px solid var(--main_themeLight);
+}
+
+.nav_container {
+    width: 70vw;
+    height: 10vh;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 5vh 0;
+}
+
+/* Navigation Styling */
+.nav_logo {
+    height: 50%;
+    width: auto;
+    padding-left: 2vw;
+    filter: saturate(0%);
+}
+
+.nav_logo:hover {
+    filter: saturate(100%);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.nav_buttonHolder {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    padding-right: 3vw;
+    justify-content: end;
+    align-items: center;
+    gap: 2vw;
+}
+
+.nav_button {
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--font_2);
+    text-decoration: 2px underline var(--main_color);
+    padding: 0 1vw;
+    font-weight: 200;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.nav_button:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+    font-weight: 300;
+}
+
+/* Article Styling */
+.about_title {
+    font-size: 5em;
+    font-family: var(--font_1);
+    text-align: center;
+    padding-top: 15vh;
+    text-shadow: 0.1em 0.1em 0 var(--main_themeDark);
+    width: 100%;
+    text-align: center;
+}
+
+.about_paragraph {
+    font-size: 1.5em;
+    font-family: var(--font_2);
+    text-align: center;
+    padding: 0 10vw;
+    line-height: 2em;
+    margin-top: 5vh;
+    text-shadow: 0.1em 0.1em 0 var(--main_themeDark);
+    padding-bottom: 15vh;;
+}
+
+.about_subtitle {
+    font-size: 2em;
+    font-family: var(--font_1);
+    padding-top: 20vh;
+    text-shadow: 0.1em 0.1em 0 var(--main_themeDark);
+    padding-left: 4vw;
+    font-weight: 100;
+}
+
+.about_info {
+    font-size: 1.2em;
+    font-family: var(--font_2);
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vh;
+    line-height: 2em;
+    text-shadow: 0.1em 0.1em 0 var(--main_themeDark);
+    padding-bottom: 15vh;
+}
+
+.spotify_button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: var(--font_2);
+    font-size: 1.3em;
+    padding-top: 2vh;
+    text-decoration: 2px underline var(--main_color);
+    cursor: pointer;
+    padding-left: 2vw;
+    font-weight: 200;
+}
+
+.spotify_button:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+    font-weight: 300;
+}
