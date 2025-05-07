@@ -49,6 +49,17 @@ body {
     color: var(--main_color);
 }
 
+.info-a {
+    text-decoration: line-through 4px var(--main_color);
+}
+
+.info-a:hover {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--main_color);
+}
+
 /* Containers */
 .page_container {
     width: 100vw;
@@ -522,7 +533,14 @@ body {
     .info_strike {
         text-decoration: line-through;
         text-decoration-line: line-through;
-        text-decoration-thickness: 2px;
+        text-decoration-thickness: 5px;
+        text-decoration-color: var(--main_color);
+    }
+
+    .info-a {
+        text-decoration: line-through;
+        text-decoration-line: line-through;
+        text-decoration-thickness: 5px;
         text-decoration-color: var(--main_color);
     }
 
@@ -643,7 +661,7 @@ body {
     }
 
     .projects_info-title {
-        font-size: 7.5vw;
+        font-size: 6.5vw;
         padding-top: 2vh;
         padding-bottom: 2vh;
     }
