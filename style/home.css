@@ -515,3 +515,194 @@ body {
     border: 2px solid var(--main_color);
     overflow: visible;
 }
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Span Color */
+    .info_strike {
+        text-decoration: line-through 2px var(--main_color);
+    }
+
+    /* Page Styling */
+    .content_container {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* Navigation Styling */
+    .nav_container {
+        width: 100%;
+    }
+
+    .nav_buttonHolder {
+        width: 80%;
+    }
+
+    .nav_button {
+        font-size: 4vw;
+    }
+
+    /* Header Styling */
+    .header_title {
+        font-size: 15vw;
+        padding-left: 7vw;
+        padding-top: 5vw;
+    }
+
+    .header_bigTitle {
+        font-size: 25vw;
+        line-height: 80vw;
+        padding-left: 5vw;
+    }
+
+    /* About Styling */
+    #aboutContainer {
+        flex-direction: column;
+    }
+
+    .about_info-container {
+        width: 100%;
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .about_info-title {
+        font-size: 13vw;
+        padding-left: 5vw;
+        padding-bottom: 3vh;
+    }
+
+    .about_info-paragraph {
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .about_skills-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 10vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_skills-banner {
+        position: relative;
+        width: 85%;
+    }
+
+    /* Projects Styling */
+    .projects_title {
+        font-size: 15vw;
+        padding-bottom: 3vh;
+    }
+
+    .projects_paragraph {
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .projects_card {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        overflow: visible;
+        padding: 2vh 0;
+    }
+
+    .projects_image {
+        height: auto;
+        width: 40%;
+        padding: 0 2vw;
+    }
+
+    .projects_info {
+        width: 100%;
+        height: auto;
+        padding: 0 2vw;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+
+    .projects_info-title {
+        font-size: 5vw;
+        padding-bottom: 2vh;
+    }
+
+    .projects_info-paragraph {
+        font-size: 3vw;
+        padding-bottom: 2vh;
+        width: 90%;
+        text-align: center;
+    }
+
+    .projects_info-button {
+        font-size: 3vw;
+        padding: 1vh 2vw;
+    }
+
+    .projects_info-button:hover {
+        transform: scale(1.05);
+        transition: 0.1s ease-in;
+    }
+
+    /* Contact Styling */
+    .socials_title {
+        font-size: 15vw;
+        padding-bottom: 3vh;
+    }
+
+    .socials_paragraph {
+        font-size: 4vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .socials_container {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .socials_banner {
+        width: 80%;
+        height: auto;
+        padding: 5vh 0;
+    }
+
+    /* Footer Styling */
+    .footer_container {
+        height: 10vh;
+    }
+
+    .footer_button {
+        height: 10vw;
+        width: auto;
+        padding: 10px;
+        border-radius: 100vw;
+        border: 2px solid var(--main_color);
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+  
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
