@@ -520,7 +520,10 @@ body {
 @media (max-width: 575.98px) {
     /* Span Color */
     .info_strike {
-        text-decoration: line-through 2px var(--main_color);
+        text-decoration: line-through;
+        text-decoration-line: line-through;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
     }
 
     /* Page Styling */
@@ -540,6 +543,10 @@ body {
 
     .nav_button {
         font-size: 4vw;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
     }
 
     /* Header Styling */
@@ -569,20 +576,20 @@ body {
 
     .about_info-title {
         font-size: 13vw;
-        padding-left: 5vw;
+        padding-left: 6vw;
         padding-bottom: 3vh;
     }
 
     .about_info-paragraph {
         font-size: 4vw;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 6vw;
     }
 
     .about_skills-container {
         width: 100%;
         height: auto;
-        padding-bottom: 10vh;
+        padding-top: 0;
+        padding-bottom: 0;
         justify-content: center;
         align-items: center;
     }
@@ -590,6 +597,13 @@ body {
     .about_skills-banner {
         position: relative;
         width: 85%;
+    }
+
+    .about_skills-item:hover {
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
     }
 
     /* Projects Styling */
@@ -610,7 +624,7 @@ body {
         flex-direction: column;
         align-items: center;
         overflow: visible;
-        padding: 2vh 0;
+        padding: 5vh 0;
     }
 
     .projects_image {
@@ -629,20 +643,26 @@ body {
     }
 
     .projects_info-title {
-        font-size: 5vw;
+        font-size: 7.5vw;
+        padding-top: 2vh;
         padding-bottom: 2vh;
     }
 
     .projects_info-paragraph {
-        font-size: 3vw;
+        font-size: 4vw;
         padding-bottom: 2vh;
         width: 90%;
         text-align: center;
+        line-height: 6vw;
     }
 
     .projects_info-button {
-        font-size: 3vw;
+        font-size: 4vw;
         padding: 1vh 2vw;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
     }
 
     .projects_info-button:hover {
