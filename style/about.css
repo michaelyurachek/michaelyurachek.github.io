@@ -189,3 +189,92 @@ body {
     transition: 0.1s ease-in;
     font-weight: 300;
 }
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Page Styling */
+    .content_container {
+        width: 100vw;
+    }
+
+    /* Navigation Styling */
+    .nav_container {
+        width: 100%;
+    }
+
+    .nav_buttonHolder {
+        width: 80%;
+    }
+
+    .nav_button {
+        font-size: 5vw;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
+        padding-right: 5vw;
+    }
+
+    /* Article Styling */
+    .about_title {
+        font-size: 15vw;
+        padding-top: 10vh;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .about_paragraph {
+        font-size: 4.5vw;
+        padding: 4vh 5vw;
+        line-height: 8vw;
+        margin: 0;
+    }
+
+    .about_subtitle {
+        font-size: 8vw;
+        padding-top: 5vh;
+        padding-left: 5vw;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .about_info {
+        font-size: 4vw;
+        padding: 5vh 5vw;
+        padding-top: 2vh;
+        line-height: 8vw;
+        margin: 0;
+    }
+
+    .spotify_button {
+        font-size: 4vw;
+        padding-top: 2vh;
+        padding-left: 5vw;
+        padding-bottom: 0;
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: var(--main_color);
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+  
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+  
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
