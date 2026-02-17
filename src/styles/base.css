@@ -1,0 +1,105 @@
+/* ============ [ Fonts ] ============ */
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../assets/fonts/CinzelDecorative-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Olga';
+    src: url('../assets/fonts/Olga.ttf') format('true-type');
+}
+
+@font-face {
+    font-family: 'PonyMaker';
+    src: url('../assets/fonts/PonyMaker.ttf') format('true-type');
+}
+
+@font-face {
+    font-family: 'Utendo';
+    src: url('../assets/fonts/Utendo-Regular.ttf') format('true-type');
+}
+
+/* ============ [ Root Styles ] ============ */
+:root {
+    /* Fonts */
+    --fontOne: 'Cinzel', serif;
+    --fontTwo: 'Olga', sans-serif;
+    --fontThree: 'PonyMaker', cursive;
+    --fontFour: 'Utendo', sans-serif;
+    /* Colors */
+    --black: #000000;
+    --white: #ffffff;
+    --gray-light: #d3d3d3;
+    --gray-dark: #252525;
+    --blue: #0080ff;
+    --red: #ff0000;
+    --green: #32cd32;
+    --yellow: #ffd700;
+    --purple: #9f2ec2;
+    --orange: #ff8c00;
+    --teal: #75dada;
+    --pink: #ff69b4;
+    --offwhite: #F2F0EF;
+}
+
+/* ============ [ Global Styles ] ============ */
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+img {
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        to bottom,
+        #a5a5a5,
+        #e6e6e6,
+        #7b7b7b
+    );
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #f2f2f2
+    );
+}
