@@ -1,11 +1,18 @@
 import ShinyText from '../components/ShinyText/ShinyText';
 import Beams from '../components/Beams/Beams';
 import { useState, useEffect } from "react";
+import AnimatedContent from '../components/AnimatedContent/Fade';
 import './styling/home.css';
 import imgGithub from '../assets/images/socialIcons/github.png';
 import imgInsta from '../assets/images/socialIcons/instagram.png';
 import imgLinkedIn from '../assets/images/socialIcons/linkedin.png';
 import imgSN from '../assets/images/socialIcons/skyzernetworks.png';
+import cssIcon from '../assets/images/langIcons/css.png'
+import htmlIcon from '../assets/images/langIcons/html.png'
+import javaIcon from '../assets/images/langIcons/java.png'
+import jsIcon from '../assets/images/langIcons/js.png'
+import pythonIcon from '../assets/images/langIcons/python.png'
+import reactIcon from '../assets/images/langIcons/react.png'
 
 export default function Home() {
     const [activeLink, setActiveLink] = useState(null); // null = none active
@@ -123,7 +130,19 @@ export default function Home() {
             </nav>
             <div className="homeContent-container">
                 <section className="aboutMe-section" id="aboutMe">
-                    <p className="aboutMe-description">
+                    <AnimatedContent
+                    className="aboutMe-description"
+                    distance={1000}
+                    direction="horizontal"
+                    reverse={false}
+                    duration={1}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={0.1}
+                    threshold={0.1}
+                    delay={0}
+                    >
                         I’m a frontend developer currently pursuing a degree in <span className="highlighted-text">computer science</span>, with a focus on creating clean, intuitive web experiences. 
                         As the founder of <span className="highlighted-text"><a href="https://www.skyzernetworks.com/" target="_blank" rel="noopener noreferrer">Skyzer Networks</a></span>, a small web agency, I design and build websites with attention to both visual design and structured, maintainable architecture.
                         <br/><br/>
@@ -131,10 +150,12 @@ export default function Home() {
                         Looking ahead, I hope to start my career in the tech industry, contributing to a team where I can <span className="highlighted-text">grow as a developer</span> while helping build high-quality products.
                         <br/><br/>
                         Outside of development, I enjoy exploring new technologies, refining my design skills, and working on projects that challenge me creatively and technically.
-                    </p>
+                    </AnimatedContent>
                 </section>
                 <section className="skills-section" id="skills">
-                    
+                    <div className="skills-grid">
+                        
+                    </div>
                 </section>
                 <section className="projects-section" id="projects">
 

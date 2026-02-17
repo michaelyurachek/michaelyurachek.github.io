@@ -230,6 +230,13 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: blue;
+}
+
+.skills-grid {
+    width: 80%;
+    height: 80%;
+    background-color: red;
 }
 
 /* Projects Section */
