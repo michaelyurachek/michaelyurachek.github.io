@@ -251,7 +251,7 @@ export default function Home() {
                     <h2 className="contact-title">Get in Touch</h2>
                     <p className="contact-description">
                         I’m always open to discussing new projects or collaborations.  
-                        Fill out the form below and it will open your email client to send me a message directly.
+                        Fill out the form below and it will open your email to send me a message directly.
                     </p>
 
                     <div className="contact-container">
